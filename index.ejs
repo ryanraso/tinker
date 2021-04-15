@@ -3,6 +3,7 @@
 <head>
   <%- include ("../partials/header.ejs") %>
 <script src="https://lssandbox-cumulusfsc.cs201.force.com/Lightningscheduler/lightning/lightning.out.js"></script>
+
 <script>
 $Lightning.use("runtime_appointmentbooking:lightningOutGuest",
         function() {                  // Callback once framework and app load
@@ -14,7 +15,7 @@ $Lightning.use("runtime_appointmentbooking:lightningOutGuest",
                     component.startFlow("Test_External_Inbound_New_Guest_Appointment");
                 }
             );
-        },    'https://lssandbox-cumulusfsc.cs201.force.com/Lightningscheduler'  // Site endpoint
+        },    'https://lssandbox-cumulusfsc.cs201.force.com/Lightningscheduler/'  // Site endpoint
     );
 </script>
 
