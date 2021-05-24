@@ -2,20 +2,19 @@
 <html>
 <head>
   <%- include ("../partials/header.ejs") %>
-<script src="https://lssandbox-cumulusfsc.cs201.force.com/Lightningscheduler/lightning/lightning.out.js"></script>
-
-<script>
-$Lightning.use("runtime_appointmentbooking:lightningOutGuest",
+  <script src="https://sdodemo-main-166ce2cf6b6-172-17600951d2e.force.com/professional/lightning/lightning.out.js"></script>
+  <script>
+    $Lightning.use("runtime_appointmentbooking:lightningOutGuest",
         function() {                  // Callback once framework and app load
             $Lightning.createComponent(
                 "lightning:flow",    // top-level component of your app
                 { },    // attributes to set on the component when created
                 "scheduler",    // the DOM location to insert the component
                 function(component) {            // API name of the Flow
-                    component.startFlow("Test_External_Inbound_New_Guest_Appointment");
+                    component.startFlow("External_Inbound_New_Guest_Appointment");
                 }
             );
-        },    'https://lssandbox-cumulusfsc.cs201.force.com/Lightningscheduler/'  // Site endpoint
+        },    'https://sdodemo-main-166ce2cf6b6-172-17600951d2e.force.com/professional'  // Site endpoint
     );
 </script>
 
